@@ -1,0 +1,262 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="theme-color" content="#3e454c">
+	
+	<title>Car Rental Portal | Admin Create Brand</title>
+
+	<!-- Font awesome -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- Sandstone Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Bootstrap Datatables -->
+	<link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
+	<!-- Bootstrap social button library -->
+	<link rel="stylesheet" href="css/bootstrap-social.css">
+	<!-- Bootstrap select -->
+	<link rel="stylesheet" href="css/bootstrap-select.css">
+	<!-- Bootstrap file input -->
+	<link rel="stylesheet" href="css/fileinput.min.css">
+	<!-- Awesome Bootstrap checkbox -->
+	<link rel="stylesheet" href="css/awesome-bootstrap-checkbox.css">
+	<!-- Admin Stye -->
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/JavaScript">
+<!--
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_validateForm() { //v4.0
+  var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+  for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=MM_findObj(args[i]);
+    if (val) { nm=val.name; if ((val=val.value)!="") {
+      if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+        if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+      } else if (test!='R') { num = parseFloat(val);
+        if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+        if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+          min=test.substring(8,p); max=test.substring(p+1);
+          if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+    } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+  } if (errors) alert('The following error(s) occurred:\n'+errors);
+  document.MM_returnValue = (errors == '');
+}
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+//-->
+</script>
+<script type="text/javascript" src="nicEdit.js"></script>
+<script type="text/javascript">
+	bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
+</script>
+  <style>
+		.errorWrap {
+    padding: 10px;
+    margin: 0 0 20px 0;
+    background: #fff;
+    border-left: 4px solid #dd3d36;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+.succWrap{
+    padding: 10px;
+    margin: 0 0 20px 0;
+    background: #fff;
+    border-left: 4px solid #5cb85c;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+		</style>
+
+
+</head>
+
+<body>
+	<div class="brand clearfix">
+	<a href="dashboard.php" style="font-size: 20px;">Car Rental Portal | Admin Panel</a>  
+		<span class="menu-btn"><i class="fa fa-bars"></i></span>
+		<ul class="ts-profile-nav">
+			
+			<li class="ts-account">
+				<a href="#"><img src="img/ts-avatar.jpg" class="ts-avatar hidden-side" alt=""> Account <i class="fa fa-angle-down hidden-side"></i></a>
+				<ul>
+					<li><a href="change-password.php">Change Password</a></li>
+					<li><a href="logout.php">Logout</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="ts-main-content">
+		<nav class="ts-sidebar">
+			<ul class="ts-sidebar-menu">
+			
+				<li class="ts-label">Main</li>
+				<li><a href="dashboard.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+			
+<li><a href="#"><i class="fa fa-files-o"></i> Brands</a>
+<ul>
+<li><a href="create-brand.php">Create Brand</a></li>
+<li><a href="manage-brands.php">Manage Brands</a></li>
+</ul>
+</li>
+
+<li><a href="#"><i class="fa fa-sitemap"></i> Vehicles</a>
+					<ul>
+						<li><a href="post-avehical.php">Post a Vehicle</a></li>
+						<li><a href="manage-vehicles.php">Manage Vehicles</a></li>
+					</ul>
+				</li>
+				<li><a href="manage-bookings.php"><i class="fa fa-users"></i> Manage Booking</a></li>
+
+				<li><a href="testimonials.php"><i class="fa fa-table"></i> Manage Testimonials</a></li>
+				<li><a href="manage-conactusquery.php"><i class="fa fa-desktop""></i> Manage Conatctus Query</a></li>
+				<li><a href="reg-users.php"><i class="fa fa-users"></i> Reg Users</a></li>
+			<li><a href="manage-pages.php"><i class="fa fa-files-o"></i> Manage Pages</a></li>
+			<li><a href="update-contactinfo.php"><i class="fa fa-files-o"></i> Update Contact Info</a></li>
+
+			<li><a href="manage-subscribers.php"><i class="fa fa-table"></i> Manage Subscribers</a></li>
+
+			</ul>
+		</nav>		<div class="content-wrapper">
+			<div class="container-fluid">
+
+				<div class="row">
+					<div class="col-md-12">
+					
+						<h2 class="page-title">Manage Pages </h2>
+
+						<div class="row">
+							<div class="col-md-10">
+								<div class="panel panel-default">
+									<div class="panel-heading">Form fields</div>
+									<div class="panel-body">
+										<form method="post" name="chngpwd" class="form-horizontal" onSubmit="return valid();">
+										
+											
+  	        	  											<div class="form-group">
+												<label class="col-sm-4 control-label">select Page</label>
+												<div class="col-sm-8">
+															   <select name="menu1" onChange="MM_jumpMenu('parent',this,0)">
+                  <option value="" selected="selected" class="form-control">***Select One***</option>
+                  <option value="manage-pages.php?type=terms">terms and condition</option>
+                  <option value="manage-pages.php?type=privacy">privacy and policy</option>
+                  <option value="manage-pages.php?type=aboutus">aboutus</option> 
+                  <option value="manage-pages.php?type=faqs">FAQs</option>
+                </select>
+												</div>
+											</div>
+											<div class="hr-dashed"></div>
+											
+											<div class="form-group">
+												<label class="col-sm-4 control-label">selected Page</label>
+												<div class="col-sm-8">
+						Privacy And Policy												</div>
+											</div>
+								
+									<div class="form-group">
+												<label class="col-sm-4 control-label">Page Details </label>
+												<div class="col-sm-8">
+			<textarea class="form-control" rows="5" cols="50" name="pgedetails" id="pgedetails" placeholder="Package Details" required>
+										&lt;span style=&quot;color: rgb(0, 0, 0); font-family: &amp;quot;Open Sans&amp;quot;, Arial, sans-serif; font-size: 14px; text-align: justify;&quot;&gt;At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat&lt;/span&gt;
+										</textarea> 
+												</div>
+											</div>
+											
+											<div class="form-group">
+												<div class="col-sm-8 col-sm-offset-4">
+								
+												<button type="submit" name="submit" value="Update" id="submit" class="btn-primary btn">Update</button>
+												</div>
+											</div>
+
+										</form>
+
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						
+					
+
+					</div>
+				</div>
+				
+			
+			</div>
+		</div>
+	</div>
+
+	<!-- Loading Scripts -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap-select.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.dataTables.min.js"></script>
+	<script src="js/dataTables.bootstrap.min.js"></script>
+	<script src="js/Chart.min.js"></script>
+	<script src="js/fileinput.js"></script>
+	<script src="js/chartData.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
+font-family: Roboto,sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;&quot;&gt;&lt;b style=&quot;background-color: transparent; box-sizing: border-box; color: rgb(43, 39, 39); font-family: Roboto,sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 700; letter-spacing: normal; opacity: 0.9; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;&quot;&gt;WHY WE DO IT?&lt;/b&gt;&lt;br style=&quot;background-color: transparent; box-sizing: border-box; color: rgb(66, 66, 66); font-family: Roboto,sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;&quot;&gt;&lt;span style=&quot;display: inline !important; float: none; background-color: transparent; color: rgb(66, 66, 66); font-family: Roboto,sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 24px; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;&quot;&gt;Transport is the backbone of any modern economy. However, rapid motorization effectuates its own set of issues. While on one hand the burgeoning number of vehicles on road has become a menace in metros across India, a number of cities suffer from lack of good urban commuting solutions. The concept of car rentals may be simple, but it holds immense potential. Be it the positive impact of rental vehicles on the environment or reducing the number of vehicles out on the streets, the shared economy of self drive car rentals is a promising solution to a number of problems plaguing urban India.&lt;/span&gt;&lt;br style=&quot;background-color: transparent; box-sizing: border-box; color: rgb(66, 66, 66); font-family: Roboto,sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;&quot;&gt;&lt;br style=&quot;background-color: transparent; box-sizing: border-box; color: rgb(66, 66, 66); font-family: Roboto,sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;&quot;&gt;&lt;b style=&quot;background-color: transparent; box-sizing: border-box; color: rgb(43, 39, 39); font-family: Roboto,sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 700; letter-spacing: normal; opacity: 0.9; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;&quot;&gt;HOW WE DO IT?&lt;/b&gt;&lt;br style=&quot;background-color: transparent; box-sizing: border-box; color: rgb(66, 66, 66); font-family: Roboto,sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;&quot;&gt;&lt;span style=&quot;display: inline !important; float: none; background-color: transparent; color: rgb(66, 66, 66); font-family: Roboto,sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 24px; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;&quot;&gt;Even the most complex of problems has a simple yet elegant solution. At H.K. Car Rent we don&rsquo;t just rent vehicles, we create products which complete the existing ecosystem. We build technology which provides a comprehensive solution to the issue of urban commute by connecting commuters to vendors in the self drive car rental business. Our vision at H.K. Car Rent is to provide a platform where vehicle owners can engage customers and conduct business seamlessly. We concentrate our efforts on simplifying the process of hiring vehicle by creating scalable mechanisms to conduct and facilitate transactions while proving an economical mode of transport to all.&lt;/span&gt;&lt;br&gt;
+										</textarea> 
+												</div>
+											</div>
+											
+											<div class="form-group">
+												<div class="col-sm-8 col-sm-offset-4">
+								
+												<button type="submit" name="submit" value="Update" id="submit" class="btn-primary btn">Update</button>
+												</div>
+											</div>
+
+										</form>
+
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						
+					
+
+					</div>
+				</div>
+				
+			
+			</div>
+		</div>
+	</div>
+
+	<!-- Loading Scripts -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap-select.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.dataTables.min.js"></script>
+	<script src="js/dataTables.bootstrap.min.js"></script>
+	<script src="js/Chart.min.js"></script>
+	<script src="js/fileinput.js"></script>
+	<script src="js/chartData.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>

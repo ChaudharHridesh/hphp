@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hridesh Furniture Udhyog.</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style type="text/css">
+	body{
+		background-color: lightblue;
+
+	}
+	h1{
+		color: red;
+         font-size: 40px;
+         text-align: center;
+         margin: 4px;
+	}
+	
+</style>
+
+</head>
+<body>
+<h1>
+HRIDESH FURNITURE UDHYOG.</h1>
+<div>
+
+<nav class="navbar navbar-default">
+<div class="container-fluid">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<ul class="nav navbar-nav navbar-right">
+<li><a class="navbar-brand" href="#">HOME</a></li>
+<li><a class="navbar-brand" href="#">ABOUT US</a></li>
+<li><a class="navbar-brand" href="#">CONTACT US</a></li>
+<li><a class="navbar-brand" href="#">PROFILE</a></li></ul>
+
+</div>
+
+
+	<img src="C:\Users\HRIDESH\Downloads\timber.jpg"width="1300px" height="300px"></div></nav>
+	<p>We facilitate with all kinds of furniture items including bed, chair, tables,sofa set, almira etc. You can place the order online with your details.The main moto of our enterprise is to provide quality product with affordable price. 
+		Inorder to view the products, please click on:</p><a href="pr2.html"color="blue"font-size="20px">View list
+	 </a> 
+
+</body>
+</html>

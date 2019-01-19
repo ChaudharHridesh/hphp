@@ -1,0 +1,23 @@
+ 1.JAVA SCRIPT(assignment)                                                                      DATE: 2019/1/17
+
+i. child node
+ii. parent node
+iii. sibling
+iv.previous sibling
+v. next sibling
+vi. appending .
+
+
+# WAYS TO WRITE JAVASCRIPT:-
+
+$(function(){
+		$('#show').click(function(){
+			$('#div1').fadeOut();
+
+		})
+#FUNCTION:-
+  i. hide()
+  ii.show()
+  iii.slideUp()
+  iv.fadeOut()
+  v.fadeToggle()
